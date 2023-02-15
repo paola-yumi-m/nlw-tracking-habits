@@ -20,7 +20,7 @@ export function Home() {
   async function fetchData() {
     try {
       setLoading(true);
-      const response = await api.get('summary');
+      const response = await api.get('/summary');
       console.log(response.data);
       setSummary(response.data);
     } catch (error) {
